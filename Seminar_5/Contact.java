@@ -17,7 +17,10 @@ public class Contact{
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
+    public Contact(String phone, String fullNm) {
+        this.phone = phone;
+        this.fullNm = fullNm;
+    }
     @Override
     public String toString() {
         return String.format("%s %s", fullNm, phone);
